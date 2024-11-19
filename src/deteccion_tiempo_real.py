@@ -17,8 +17,8 @@ while True:
     prediction = model.predict(input_frame)
     label = categories[np.argmax(prediction)]
 
-    cv2.putText(frame, f'Predicción: {label}', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-    cv2.imshow('Detección de Accesorios', frame)
+    cv2.putText(frame, f'Prediccion: {label}', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+    cv2.imshow('Deteccion de Accesorios', frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
