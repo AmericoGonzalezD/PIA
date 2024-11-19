@@ -8,7 +8,7 @@ import os
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
-data_path = '../dataset'  # Ajusta la ruta si es necesario
+data_path = 'dataset'  # Ajusta la ruta si es necesario
 categories = ['sin_accesorios', 'lentes_de_sol', 'gorra', 'ambos']
 
 def cargar_datos(data_path, categories, img_size=(128, 128)):
